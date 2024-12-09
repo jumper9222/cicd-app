@@ -9,7 +9,7 @@ test("App form submission", async () => {
     const emailInput = screen.getByTestId("emailInput");
     const submitButton = screen.getByTestId("submitButton");
 
-    await userEvent.type(emailInput, 'sigmaschool@gmail.com');
+    await userEvent.type(emailInput, 'sigmaschool');
 
     expect(submitButton.disabled).toBe(false);
 })
